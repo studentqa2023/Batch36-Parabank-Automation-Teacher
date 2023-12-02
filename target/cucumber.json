@@ -1,0 +1,144 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User should be logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2023-12-02T18:09:11.643Z",
+        "line": 16,
+        "name": "As a logged-in user, I want to logout successfully from website",
+        "description": "",
+        "id": "parabank-logout-testing;as-a-logged-in-user--i-want-to-logout-successfully-from-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "open the browser",
+            "match": {
+              "location": "com.stepdef.StepDef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pass the URL \"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.stepdef.StepDef.pass_the_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter username \"rezwan\" in the Username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rezwan\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_username_in_the_username_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter password \"Boston@2023\" in the Password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boston@2023\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.stepdef.StepDef.enter_password_in_the_password_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on Login",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on Log Out",
+            "match": {
+              "location": "com.stepdef.StepDef.click_on_log_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate logout is successful",
+            "match": {
+              "location": "com.stepdef.StepDef.validate_logout_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@TC1"
+          }
+        ]
+      }
+    ],
+    "name": "Parabank logout testing",
+    "description": "Description: User should already have an account",
+    "id": "parabank-logout-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Logout.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
